@@ -1,0 +1,58 @@
+:root { --ref-line: #d7ddd8; --ref-muted: #667068; --ref-soft: #f2f5f2; }
+.reference-profile { background:#fff; color:#172018; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.55; padding:0 20px 32px; }
+.reference-preview { max-width:760px; margin:0 auto; }
+.ref-hero { padding:18px 0 20px; }
+.ref-hero-copy h2 { font-size:32px; line-height:1.05; letter-spacing:-.035em; margin:12px 0; }
+.ref-hero-copy > p { font-size:18px; line-height:1.55; margin:12px 0 0; }
+.ref-kicker { display:flex; align-items:center; flex-wrap:wrap; gap:8px; color:var(--ref-muted); font-size:13px; }
+.ref-confidence { display:inline-flex; align-items:center; min-height:26px; padding:3px 8px; border:1px solid var(--ref-line); border-radius:4px; font-weight:700; text-transform:capitalize; }
+.ref-confidence.high { color:#15562b; border-color:#8bb99a; background:#edf7f0; }
+.ref-confidence.low { color:#765719; background:#fff8e6; border-color:#dbc98e; }
+.ref-images { display:flex; gap:8px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 0 10px; margin:0 -20px 14px; padding-left:20px; scrollbar-width:none; }
+.ref-images::-webkit-scrollbar { display:none; }
+.ref-image { flex:0 0 132px; color:var(--ref-muted); text-decoration:none; scroll-snap-align:start; }
+.ref-image.primary-image { flex-basis:230px; }
+.ref-image img { display:block; width:100%; height:132px; object-fit:cover; border-radius:4px; background:#e9ede9; border:1px solid var(--ref-line); }
+.ref-image.primary-image img { height:180px; }
+.ref-image span { display:block; font-size:11px; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ref-facts { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--ref-line); border-bottom:1px solid var(--ref-line); margin:0; }
+.ref-facts > div { padding:14px 10px 14px 0; min-width:0; }
+.ref-facts > div:nth-child(even) { border-left:1px solid var(--ref-line); padding-left:14px; }
+.ref-facts span { display:block; color:var(--ref-muted); font-size:12px; margin-bottom:4px; }
+.ref-facts strong { display:block; font-size:15px; line-height:1.35; overflow-wrap:anywhere; }
+.ref-section { padding:22px 0; border-bottom:1px solid var(--ref-line); }
+.ref-section h3 { font-size:22px; letter-spacing:-.025em; line-height:1.15; margin:0 0 14px; }
+.ref-section p { margin:0 0 12px; }
+.ref-section p:last-child { margin-bottom:0; }
+.ref-section strong { display:block; margin-bottom:6px; }
+.ref-subsections { display:grid; gap:18px; }
+.ref-two-column { display:grid; gap:18px; }
+.ref-chips { display:flex; flex-wrap:wrap; gap:6px; }
+.ref-chips span { display:inline-block; padding:5px 8px; border:1px solid #cbd4cd; border-radius:4px; background:#f7f9f7; font-size:13px; }
+.ref-list { margin:4px 0 0; padding-left:21px; }
+.ref-list li { margin:7px 0; padding-left:2px; }
+.ref-definition-list { margin:0 0 12px; }
+.ref-definition-list > div { display:grid; grid-template-columns:120px 1fr; gap:12px; padding:9px 0; border-bottom:1px solid #edf0ed; }
+.ref-definition-list dt { color:var(--ref-muted); }
+.ref-definition-list dd { margin:0; font-weight:650; }
+.ref-disclaimer,.ref-meta-copy,.ref-footer { color:var(--ref-muted); font-size:12px; }
+.ref-conflicts { background:#fffaf0; margin:0 -20px; padding-left:20px; padding-right:20px; }
+.ref-sources { display:grid; }
+.ref-sources a { display:grid; gap:2px; padding:12px 0; border-top:1px solid #edf0ed; color:#174e2d; text-decoration:none; }
+.ref-sources a:first-child { border-top:0; padding-top:0; }
+.ref-sources strong { margin:0; font-size:15px; }
+.ref-sources span { color:var(--ref-muted); font-size:12px; }
+.ref-footer { padding:14px 0 0; }
+.ref-loading,.ref-empty { padding:56px 22px; text-align:center; max-width:520px; margin:0 auto; }
+.ref-loading h2,.ref-empty h2,.ref-empty h3 { margin:14px 0 8px; }
+.ref-loading p,.ref-empty p { color:var(--ref-muted); }
+.ref-empty .button { margin-top:18px; }
+.research-preview { background:#fff; }
+#detailContent .detail-body { padding-top:0; }
+#detailContent .detail-body > .reference-profile { margin-left:-16px; margin-right:-16px; }
+@media (min-width:640px) {
+  .reference-profile { padding-left:28px; padding-right:28px; }
+  .ref-images { margin-left:-28px; margin-right:-28px; padding-left:28px; }
+  .ref-two-column,.ref-subsections { grid-template-columns:1fr 1fr; }
+  .ref-conflicts { margin-left:-28px; margin-right:-28px; padding-left:28px; padding-right:28px; }
+}
